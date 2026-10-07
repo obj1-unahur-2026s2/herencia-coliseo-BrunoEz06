@@ -1,9 +1,14 @@
-object pepita {
-  var energy = 100
+class Arma{
+  const property  longitud  
+  const property peso
+  var filo 
+  method poderDeAtaque()
+}
+class Filo inherits Arma(){
 
-  method energy() = energy
+  override method poderDeAtaque()= longitud * filo
+}
 
-  method fly(minutes) {
-    energy = energy - minutes * 3
-  }
+class Contundente inherits Arma(){
+  override method poderDeAtaque(){return peso}
 }
